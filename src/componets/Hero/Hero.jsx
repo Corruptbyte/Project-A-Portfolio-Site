@@ -1,6 +1,8 @@
 import React from "react";
 import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
+
+// Component that renders the Hero section
 export const Hero = () => {
     return (
         <section className={styles.container}>
@@ -19,13 +21,15 @@ export const Hero = () => {
                     Contact Me
                 </a>
             </div>
-            {/*renders hovering girl image just replace the image with another image with same name in the assets/hero folder*/}
+            {/* Renders the hovering wizard image */}
             <img
                 src={getImageUrl("hero/heroImage.png")}
                 alt="Hero image of me"
                 className={styles.heroImg}
             />
+            {/* Adds top blur effect */}
             <div className={StyleSheet.topBlur} />
+            {/* Adds bottom blur effect */}
             <div className={StyleSheet.bottomBlur} />
         </section>
     );
