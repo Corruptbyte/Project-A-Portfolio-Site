@@ -1,18 +1,21 @@
 import React from "react";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
-// renders laptop girl image just replace the image with another image with same name in the assets/about folder
+
+// Component that renders the About section
 export const About = () => {
     return (
         <section className={styles.container} id="about">
             <h2 className={styles.title}>About</h2>
             <div className={styles.content}>
+                {/* Renders the laptop girl image */}
                 <img
-                    src={getImageUrl("about/aboutImage.png")}
+                    src={getImageUrl("about/aboutImage1.png")}
                     alt="Me sitting with a laptop"
                     className={styles.aboutImage}
                 />
                 <ul className={styles.aboutItems}>
+                    {/* Item 1: Frontend Developer */}
                     <li className={styles.aboutItem}>
                         <img
                             src={getImageUrl("about/cursorIcon.png")}
@@ -26,6 +29,7 @@ export const About = () => {
                             </p>
                         </div>
                     </li>
+                    {/* Item 2: Backend Developer */}
                     <li className={styles.aboutItem}>
                         <img
                             src={getImageUrl("about/serverIcon.png")}
@@ -39,6 +43,7 @@ export const About = () => {
                             </p>
                         </div>
                     </li>
+                    {/* Item 3: CSS Wizard */}
                     <li className={styles.aboutItem}>
                         <img
                             src={getImageUrl("about/uiIcon.png")}
@@ -48,7 +53,7 @@ export const About = () => {
                             <h3>CSS Wizard</h3>
                             <p>
                                 I have knowledge and expertise in utilizing CSS
-                                to build beautiful, eye popping websites.
+                                to build beautiful, eye-popping websites.
                             </p>
                         </div>
                     </li>
