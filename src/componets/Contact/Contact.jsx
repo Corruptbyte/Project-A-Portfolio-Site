@@ -1,8 +1,8 @@
 import React from "react";
-
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
+// Component that renders the Contact section
 export const Contact = () => {
     return (
         <footer id="Contact" className={styles.container}>
@@ -12,6 +12,7 @@ export const Contact = () => {
             </div>
             <ul className={styles.links}>
                 <li className={styles.link}>
+                    {/* Renders the email icon */}
                     <img
                         src={getImageUrl("contact/emailIcon.png")}
                         alt="Email icon"
@@ -22,6 +23,7 @@ export const Contact = () => {
                 </li>
 
                 <li className={styles.link}>
+                    {/* Renders the LinkedIn icon */}
                     <img
                         src={getImageUrl("contact/linkedinIcon.png")}
                         alt="LinkedIn icon"
@@ -31,6 +33,7 @@ export const Contact = () => {
                     </a>
                 </li>
                 <li className={styles.link}>
+                    {/* Renders the GitHub icon */}
                     <img
                         src={getImageUrl("contact/githubIcon.png")}
                         alt="Github icon"
